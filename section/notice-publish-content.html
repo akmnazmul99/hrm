@@ -1,0 +1,185 @@
+<script type="text/javascript">
+    $(function() {
+        $('#start_date').datepicker().on('changeDate', function(ev) {
+            $('#start_date').text($('#start_date').data('date'));
+            $('#start_date').datepicker('hide');
+        });
+        $('#end_date').datepicker().on('changeDate', function(ev) {
+            $('#end_date').text($('#end_date').data('date'));
+            $('#end_date').datepicker('hide');
+        });
+        $('#start_date').val('Start Date');
+        $('#end_date').val('End Date');
+//        $('#start_date').val('<?php echo $current_date ?>');
+//        $('#end_date').val('<?php echo $current_date ?>');
+    });
+   $(document).ready(function(){
+    $("#hr_notice_edit_click_row_1").click(function(){
+        $("#edit-hr-notice-table").hide();
+         $("#edit-hr-notice-hidden-table").show()
+    });
+    $("#hr_notice_delete_click_row_1").click(function(){
+        $("#hr-notice-delete-row-1").hide();
+    });
+});
+</script>
+<div class="content-row-adjust">
+    <div class="row form-group">
+        <div class="col-md-7">
+            <div class="table-responsive" id="edit-hr-notice-table">
+                <table width="100%" class="table table-bordered table-striped">
+                    <tbody>
+                        <tr>
+                            <th class="detailedViewHeaderContent" colspan="5"> HR Notice </th>
+                        </tr>
+                        <tr>
+                            <th class="cellLabelconet" width="15%">Title </th>
+                            <th class="cellLabelconet" width="15%">Date </th>
+                            <th class="cellLabelconet" width="65%"> Details </th>
+                            <th class="cellLabelconet" width="10%"> Action</th>
+                            <!--<th class="cellLabelconet" width="10%"> delete </th>-->
+                        </tr>
+
+                        <tr id="hr-notice-delete-row-1">
+                            <td class="cellLabelconet"> VACATION NOTICE 1</td>
+                            <td class="cellLabelconet"><input data-date-format='yyyy-mm-dd' id="start_date" type="text" size="18" placeholder="Start Date"  name="start_date" class="form-control input-xs customInputMargin"></td>
+                            <!--<td class="cellLabelconet">2017-02-19</td>-->
+                            <td class="cellLabelconet"> Dear Everyone, Our office will remain close on February 21, 2017 for International Mother Language Day and there will also a surprizing Holiday on February 22, 2017 Wednesday!!....Enjoy the 4 Days long Vaccation...:) Regards, HR &amp; Admin </td>
+                            <td class="cellLabelconet"> <a id="hr_notice_edit_click_row_1">edit</a> <hr class="custom-hr"> <a id="hr_notice_delete_click_row_1">delete</a></td>
+                            <!--<td class="cellLabelconet"> <a id="hr_notice_delete_click_row_1">delete</a> </td>-->           
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="table-responsive" id="edit-hr-notice-hidden-table" style="display: none;">
+                <table width="100%" class="table table-bordered table-striped">
+                    <tbody>
+                        <tr>
+                            <th class="detailedViewHeaderContent" colspan="5"> HR Notice </th>
+                        </tr>
+                        <tr>
+                            <th class="cellLabelconet" width="15%">Title </th>
+                            <th class="cellLabelconet" width="15%">Date </th>
+                            <th class="cellLabelconet" width="65%"> Details </th>
+                            <th class="cellLabelconet" width="10%"> Action </th>
+                            <!--<th class="cellLabelconet" width="10%"> Cancel </th>-->
+                        </tr>
+                        <tr>
+                            <td class="cellLabelconet"> <textarea class="form-control" rows="5">VACATION NOTICE 1</textarea></td>
+                            <td class="cellLabelconet"><input data-date-format='yyyy-mm-dd' id="start_date" type="text" size="18" placeholder="Start Date"  name="start_date" class="form-control input-xs customInputMargin"></td>
+                            <!--<td class="cellLabelconet">2017-02-19</td>-->
+                            <td class="cellLabelconet"> <textarea class="form-control" rows="5">Dear Everyone, Our office will remain close on February 21, 2017 for International Mother Language Day and there will also a surprizing Holiday on February 22, 2017 Wednesday!!....Enjoy the 4 Days long Vaccation...:) Regards, HR &amp; Admin </textarea></td>
+                            <td class="cellLabelconet"> <a id="edit-hr-notice-hidden-row-save-button-1" >Save</a> <hr class="custom-hr"> <a href="javascript:window.location.reload(true)" >Cancel</a></td>
+                            <!--<td class="cellLabelconet"> <a href="javascript:window.location.reload(true)" >Cancel</a></td>-->      
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="table-responsive">
+                <table width="100%" class="table table-bordered table-striped">
+                    <tbody><tr >
+                            <th class="detailedViewHeaderContent" colspan="5"> HR Notice </th>
+                        </tr>
+                        <tr >
+                            <th class="cellLabelconet" width="15%">Title </th>
+                            <th class="cellLabelconet" width="15%">Date </th>
+                            <th class="cellLabelconet" width="10%"> Company </th>
+                            <th class="cellLabelconet" width="65%"> Details </th>
+                            <th class="cellLabelconet" width="10%"> File </th>
+                        </tr>
+
+                        <tr >
+                            <td class="cellLabelconet"> VACATION NOTICE </td>
+                            <td class="cellLabelconet">2017-02-19</td>
+                            <td class="cellLabelconet"> IPVision Limited </td>
+                            <td class="cellLabelconet"> Dear Everyone, Our office will remain close on February 21, 2017 for International Mother Language Day and there will also a surprizing Holiday on February 22, 2017 Wednesday!!....Enjoy the 4 Days long Vaccation...:) Regards, HR &amp; Admin </td>
+                            <td class="cellLabelconet"> 
+                            </td>           
+                        </tr>
+                    </tbody></table>
+            </div>
+
+            <div class="table-responsive">
+                <table width="100%" class="table table-bordered table-striped">
+                    <tbody><tr align="center">
+                            <th class="detailedViewHeaderContent" colspan="3"> Yearly Leave Remaining (2017) </th>
+                        </tr>
+                        <tr>
+
+                        </tr><tr>
+                            <td class="cellLabelconet" width="33%"><b> Leave Type</b></td>
+                            <td class="cellLabelconet" width="33%"><b> Total Days </b></td>
+                            <td class="cellLabelconet" width="33%"><b> Details</b></td>
+                        </tr> 
+                        <tr>
+                            <td class="cellLabelconet" width="33%">Forward Earn Leave</td>
+                            <td class="cellLabelconet" width="33%">10</td>
+                            <td class="cellLabelconet" width="33%"></td>
+                        </tr>
+
+
+
+                        <tr style="height: 25px;">
+                            <td class="cellLabelconet">Earn leave &nbsp;</td>
+                            <td class="cellLabelconet">9 &nbsp;</td>
+                            <td class="cellLabelconet"> &nbsp;</td>
+                        </tr>
+
+                        <tr style="height: 25px;">
+                            <td class="cellLabelconet">Medical leave  &nbsp;</td>
+                            <td class="cellLabelconet">9 &nbsp;</td>
+                            <td class="cellLabelconet"> &nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="table-responsive">
+                <table width="100%" class="table table-bordered table-striped">
+                    <tbody><tr >
+                            <th class="detailedViewHeaderContent" colspan="8"> Leave Application (2017) </th>
+                        </tr>
+                        <tr >
+                            <th class="cellLabelconet" width="10%">Leave Type </th>
+                            <th class="cellLabelconet" width="10%">Leave Start  </th>
+                            <th class="cellLabelconet" width="10%">Leave End </th>
+                            <th class="cellLabelconet" width="10%">No of Days </th>
+                            <th class="cellLabelconet" width="10%">Join Date </th>
+                            <th class="cellLabelconet" width="10%">Leave State</th>              
+                        </tr>
+                        <tr >
+                            <td class="cellLabelconet"> Half day </td>
+                            <td class="cellLabelconet"> 2017-01-08 </td>
+                            <td class="cellLabelconet"> 2017-01-08 </td>
+                            <td class="cellLabelconet"> 0.5 </td>
+                            <td class="cellLabelconet"> 2017-01-09 </td>
+                            <td class="cellLabelconet">
+                                Approved 
+                            </td>
+                        </tr>
+                        <tr >
+                            <td class="cellLabelconet"> Half day </td>
+                            <td class="cellLabelconet"> 2017-01-10 </td>
+                            <td class="cellLabelconet"> 2017-01-10 </td>
+                            <td class="cellLabelconet"> 0.5 </td>
+                            <td class="cellLabelconet"> 2017-01-11 </td>
+                            <td class="cellLabelconet">
+                                Approved 
+                            </td>
+                        </tr>
+                        <tr >
+                            <td class="cellLabelconet"> Earn leave </td>
+                            <td class="cellLabelconet"> 2017-01-28 </td>
+                            <td class="cellLabelconet"> 2017-01-29 </td>
+                            <td class="cellLabelconet"> 2 </td>
+                            <td class="cellLabelconet"> 2017-01-30 </td>
+                            <td class="cellLabelconet">
+                                Approved 
+                            </td>
+                        </tr>
+                    </tbody></table>
+            </div>
+        </div>
+    </div>
+</div>

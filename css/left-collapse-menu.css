@@ -1,0 +1,99 @@
+/*
+theme: theme 1
+Author: A.K.M. Nazmul Islam
+version: 1.0
+*/
+
+
+/* -------------------------------- left menu ----------------------------- */
+.left-menu-anchor{
+    text-decoration: none!important; 
+    font-size: 13px; 
+    font-weight: normal;
+    color: #484848!important; 
+}
+.custom-panel h4, .custom-panel h4 a{
+     color: #2574A9!important;
+}
+.left-menu-anchor h4{
+    /*color: #484848!important;*/
+    font-size: 13px !important;
+    line-height: 26px;
+    font-weight: normal !important;
+}
+
+.custom-panel{
+    cursor: pointer; 
+    border-radius: 0!important; 
+    margin-bottom: -6px!important;
+    width: 100%;
+}
+.custom-panel-heading{
+    padding: 8px!important; 
+    background-color: #fff!important;
+    border-radius: 0!important; 
+}
+.panel-default {
+    border-top: 1px solid #2574A9!important;
+    border-bottom: 1px solid #2574A9!important;
+    /*border-color: red;*/
+}
+/*.panel-default > .panel-heading {
+    background-color: #f5f5f5;
+   border-color: #2574A9!important;
+    color: #333;
+}*/
+/*.panel-default > .custom-panel-heading{
+    padding: 8px!important; 
+    background-color: #222D32!important;
+    border-radius: 0!important; 
+}*/
+.left-menu-unorder-list{
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0;
+}
+.left-menu-unorder-list a li{
+    background-color: #D4E2F0; 
+    padding: 5px;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.left-menu-unorder-list a li:hover{
+    background-color: #ABC7F4; 
+    padding: 5px;
+    cursor: pointer;
+}
+.left-menu-unorder-list a,.left-menu-unorder-list a:hover,.left-menu-unorder-list a:focus,.left-menu-unorder-list a:visited{
+    text-decoration: none;
+    cursor: pointer;
+     color: #484848!important;
+}
+.container-fluid > .left-panel-navbar-collapse-custom, .container-fluid > .navbar-header, .container > .left-panel-navbar-collapse-custom, .container > .left-panel-navbar-header-custom {
+    margin-left: -31px!important;
+    margin-right: -31px!important;
+    margin-top: -2px!important;
+    margin-bottom: 5px;
+}
+.left-panel-navbar-default{
+    background-color: #fff!important;
+    border: 1px solid #fff!important;
+}
+
+@media (max-width: 480px) {
+    
+}
+@media (min-width: 481px)and (max-width: 767px) {
+   
+}
+
+@media (min-width: 768px)and (max-width: 991px) {
+   
+}
+@media (min-width: 992px)and (max-width: 1199px) { 
+   
+}
+
+@media (min-width: 1200px) {
+    
+}

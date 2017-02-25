@@ -1,0 +1,449 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <!--[if lt IE 8]>
+           <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+       <![endif]-->
+    <head>
+        <title>HRM Dashboard</title>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="A.K.M. Nazmul Islam">
+
+        <link rel="apple-touch-icon" href="images/">
+
+        <!-- stylesheet -->
+        <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+        <link type="text/css" rel="stylesheet" href="css/left-collapse-menu.css">
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+
+        <!-- script -->
+        <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+
+
+    </head>
+    <body>
+        <!-- header section -->
+        <section  class="dashboard-header-section">
+            <div id="header"></div>
+        </section>
+
+        <!-- content section -->
+        <p id="json_data"></p>
+        <script type="text/javascript">
+//            var data = JSON.parse('{"c":{"a":{"name":"cable - black","value":2}}}')    
+            //var data = JSON.parse('{"title":"urine routine examination", "title2":"urine routine examination2"}')    
+            //for (var event in data) {
+//                alert(event);
+//                var dataCopy = data[event];
+//                alert(dataCopy);
+//                for (data in dataCopy) {
+//                    var mainData = dataCopy[data];
+//                    for (key in mainData) {
+//                        if (key.match(/name|value/)) {
+//                            //console.log(key + ' ' + mainData[key]);
+//                            alert('key : ' + key + ' :: value : ' + mainData[key])
+//                        }
+//                    }
+//                }
+            //}
+
+
+
+//var data = JSON.parse('{"c":{"a":{"name":"cable - black","value":2}}}')
+
+
+
+
+
+//            var json_data = {
+//                "title": "urine routine examination",
+//                "tests": {
+//                    "microscopic examination": [
+//                        "epithelial_cell",
+//                        "rbc",
+//                        "casts",
+//                        "spermatozoa",
+//                        "fungus",
+//                        "bacteria",
+//                        "trichomonas",
+//                        "calcium_oxaiate",
+//                        "uric_acid_crystal",
+//                        "urate_crystal"
+//                    ],
+//                    "physical examination": [
+//                        "color",
+//                        "appearance",
+//                        "specefic_gravity",
+//                        "sediment"
+//                    ],
+//                    "chemical examination": [
+//                        "albumin",
+//                        "ex_phosphate",
+//                        "glucose",
+//                        "ketones",
+//                        "urobilinogen",
+//                        "bench_jones_protein",
+//                        "bilesalt",
+//                        "bile_pigment"
+//                    ]
+//                }
+//            };
+//            var event, dataCopy, i, j, x = "";
+//            x += "<div class='container'>";
+//            x += "<div class='row form-group margin-top-25px'>";
+//            x += "<div class='col-md-12'>";
+//
+//            for (event in json_data) {
+//                //alert(event);
+//                if (event == "title") {
+//                    x += "<div class='row form-group text-center'>";
+//                    x += "<div class='col-md-12'>";
+//                    dataCopy = json_data[event];
+//                    x += "<h1 class''>" + dataCopy + "</h1>";
+//                    x += "</div>";
+//                    x += "</div>";
+//
+//                }
+//            }
+//
+//            var l = 0;
+//            var k = 3;
+//            x += "<div class='row form-group'>";
+//            for (j in json_data.tests) {
+//                if (l != k) {
+//                    x += "<div class='col-md-4'>";
+//                    x += "<h3 class''>" + j + "</h3>";
+//
+//                    var count = json_data.tests[j].length;
+//                    var newArray = new Array(count);
+//                    newArray = json_data.tests[j];
+//
+//                    for (i = 0; i < newArray.length; i++) {
+//
+//                        x += "<div class='row form-group'>";
+//                        x += "<div class='col-md-4'>";
+//                        x += "<h5>" + newArray[i] + "</h5>";
+//                        x += "</div>";
+//                        x += "<div class='col-md-8'>";
+//                        x += "<input type='text' class='form-control'>";
+//                        x += "</div>";
+//                        x += "</div>";
+//                    }
+//                    x += "</div>";
+//                    l++;
+//                }
+//                else {
+//                    x += "<div class='row form-group'>";
+//                    x += "</div>";
+//                    x += "<div class='col-md-4'>";
+//                    x += "<h3 class''>" + j + "</h3>";
+//
+//                    var count = json_data.tests[j].length;
+//                    var newArray = new Array(count);
+//                    newArray = json_data.tests[j];
+//
+//                    for (i = 0; i < newArray.length; i++) {
+//
+//                        x += "<div class='row form-group'>";
+//                        x += "<div class='col-md-4'>";
+//                        x += "<h5>" + newArray[i] + "</h5>";
+//                        x += "</div>";
+//                        x += "<div class='col-md-8'>";
+//                        x += "<input type='text' class='form-control'>";
+//                        x += "</div>";
+//                        x += "</div>";
+//                    }
+//                    x += "</div>";
+//                    k = k + 3;
+//                    l++;
+//                }
+//            }
+//            x += "</div>";
+//            x += "</div>";
+//            x += "</div>";
+//            x += "</div>";
+//            document.getElementById("json_data").innerHTML = x;
+// {"physical_color":"newArray[i].fdv", "title2":"urine routine examination2"}
+            var json_data = {
+                "title": "urine routine examination",
+                "tests": {
+                    "physical examination": [
+                        {
+                            "dn": "color",
+                            "cn": "physical_color",
+                            "ft": "1",
+                            "fdv": "yellow",
+                            "rv": ""
+                        },
+                        {
+                            "dn": "appearance",
+                            "cn": "physical_appearance",
+                            "ft": "1",
+                            "fdv": "",
+                            "rv": ""
+                        },
+                        {
+                            "dn": "specefic_gravity",
+                            "cn": "physical_specefic_gravity",
+                            "ft": "1",
+                            "fdv": "",
+                            "rv": ""
+                        },
+                        {
+                            "dn": "sediment",
+                            "cn": "physical_sediment",
+                            "ft": "1",
+                            "fdv": "",
+                            "rv": ""
+                        }
+                    ],
+                    "chemical examination": [
+                        {
+                            "dn": "albumin",
+                            "cn": "chemical_albumin",
+                            "ft": "1",
+                            "fdv": "",
+                            "rv": ""
+                        },
+                        {
+                            "dn": "ex_phosphate",
+                            "cn": "chemical_ex_phosphate",
+                            "ft": "1",
+                            "fdv": "",
+                            "rv": ""
+                        },
+                        {
+                            "dn": "glucose",
+                            "cn": "chemical_glucose",
+                            "ft": "1",
+                            "fdv": "",
+                            "rv": ""
+                        },
+                        {
+                            "dn": "ketones",
+                            "cn": "chemical_ketones",
+                            "ft": "1",
+                            "fdv": "",
+                            "rv": ""
+                        },
+                        {
+                            "dn": "urobilinogen",
+                            "cn": "chemical_urobilinogen",
+                            "ft": "1",
+                            "fdv": "",
+                            "rv": ""
+                        },
+                        {
+                            "dn": "bench_jones_protein",
+                            "cn": "chemical_bench_jones_protein",
+                            "ft": "1",
+                            "fdv": "",
+                            "rv": ""
+                        },
+                        {
+                            "dn": "bilesalt",
+                            "cn": "chemical_bilesalt",
+                            "ft": "1",
+                            "fdv": "",
+                            "rv": ""
+                        },
+                        {
+                            "dn": "bile_pigment",
+                            "cn": "chemical_bile_pigment",
+                            "ft": "1",
+                            "fdv": "",
+                            "rv": ""
+                        }
+                    ],
+                    "microscopic examination": [
+                        {
+                            "dn": "epithelial_cell",
+                            "cn": "microscopic_epithelial_cell",
+                            "ft": "1",
+                            "fdv": "",
+                            "rv": ""
+                        },
+                        {
+                            "dn": "rbc",
+                            "cn": "microscopic_rbc",
+                            "ft": "1",
+                            "fdv": "",
+                            "rv": ""
+                        },
+                        {
+                            "dn": "casts",
+                            "cn": "microscopic_casts",
+                            "ft": "1",
+                            "fdv": "",
+                            "rv": ""
+                        },
+                        {
+                            "dn": "spermatozoa",
+                            "cn": "microscopic_spermatozoa",
+                            "ft": "1",
+                            "fdv": "",
+                            "rv": ""
+                        },
+                        {
+                            "dn": "fungus",
+                            "cn": "microscopic_fungus",
+                            "ft": "1",
+                            "fdv": "",
+                            "rv": ""
+                        },
+                        {
+                            "dn": "bacteria",
+                            "cn": "microscopic_bacteria",
+                            "ft": "1",
+                            "fdv": "",
+                            "rv": ""
+                        },
+                        {
+                            "dn": "trichomonas",
+                            "cn": "microscopic_trichomonas",
+                            "ft": "1",
+                            "fdv": "",
+                            "rv": ""
+                        },
+                        {
+                            "dn": "calcium_oxaiate",
+                            "cn": "microscopic_calcium_oxaiate",
+                            "ft": "1",
+                            "fdv": "",
+                            "rv": ""
+                        },
+                        {
+                            "dn": "uric_acid_crystal",
+                            "cn": "microscopic_uric_acid_crystal",
+                            "ft": "1",
+                            "fdv": "",
+                            "rv": ""
+                        },
+                        {
+                            "dn": "urate_crystal",
+                            "cn": "microscopic_urate_crystal",
+                            "ft": "2",
+                            "fdv": "",
+                            "rv": ""
+                        }
+                    ]
+                }
+            };
+            function submit_button_clicked() {
+                // alert(document.getElementsByName("physical_appearance")[0].value);
+                //alert("here");
+                for (j in json_data.tests) {
+                    var count = json_data.tests[j].length
+                    var columnName = new Array(count);
+                    columnName = json_data.tests[j];
+                    for (var p = 0; p < count; p++) {
+                      //  alert(columnName[p].cn + " " + document.getElementsByName(columnName[p].cn)[0].value);
+                    }
+                }
+            }
+
+            var newArray, event, dataCopy, i, j, x = "";
+            x += "<div class='container'>";
+            x += "<form name='pathology_form' action=''>";
+            x += "<div class='row form-group margin-top-25px'>";
+            x += "<div class='col-md-12'>";
+            for (event in json_data) {
+                //alert(event);
+                if (event == "title") {
+                    x += "<div class='row form-group text-center'>";
+                    x += "<div class='col-md-12'>";
+                    dataCopy = json_data[event];
+                    x += "<h1 class''>" + dataCopy + "</h1>";
+                    x += "</div>";
+                    x += "</div>";
+                }
+            }
+
+            var l = 0;
+            var k = 3;
+            x += "<div class='row form-group'>";
+            for (j in json_data.tests) {
+                if (l != k) {
+                    x += "<div class='col-md-4'>";
+                    x += "<h3 class''>" + j + "</h3>";
+                    var count = json_data.tests[j].length;
+                    newArray = new Array(count);
+                    newArray = json_data.tests[j];
+                    for (i = 0; i < newArray.length; i++) {
+
+                        x += "<div class='row form-group'>";
+                        x += "<div class='col-md-4'>";
+                        x += "<h5>" + newArray[i].dn + "</h5>";
+                        x += "</div>";
+                        x += "<div class='col-md-8'>";
+                        if (newArray[i].ft == 1) {
+                            //document.createElement(newArray[i].cn);
+                            x += "<input type='text'  name='" + newArray[i].cn + "' class='form-control' value='" + newArray[i].fdv + "'>";
+                            //var txt=$('input:text[name=DrugDurationLength   ]').val();
+                        }
+                        else if (newArray[i].ft == 2) {
+                            x += "<textarea class='form-control' rows='3' ></textarea>";
+                        }
+
+                        x += "</div>";
+                        x += "</div>";
+                    }
+                    x += "</div>";
+                    l++;
+                }
+                else {
+                    x += "<div class='row form-group'>";
+                    x += "</div>";
+                    x += "<div class='col-md-4'>";
+                    x += "<h3 class''>" + j + "</h3>";
+                    var count = json_data.tests[j].length;
+                    var newArray = new Array(count);
+                    newArray = json_data.tests[j];
+                    for (i = 0; i < newArray.length; i++) {
+
+                        x += "<div class='row form-group'>";
+                        x += "<div class='col-md-4'>";
+                        x += "<h5>" + newArray[i].dn + "</h5>";
+                        x += "</div>";
+                        x += "<div class='col-md-8'>";
+                        if (newArray[i].ft == 1) {
+                            x += "<input type='text' class='form-control' value=''>";
+                        }
+                        else if (newArray[i].ft == 2) {
+                            x += "<textarea class='form-control' rows='3' ></textarea>";
+                        }
+                        x += "</div>";
+                        x += "</div>";
+                    }
+                    x += "</div>";
+                    k = k + 3;
+                    l++;
+                }
+            }
+            x += "</div>";
+            x += "</div>";
+            x += "</div>";
+            x += "<div class='row form-group margin-top-25px pull-right'>";
+            x += "<div class='col-md-12'>";
+            x += "<input type='submit' class='custom-button' value='submit' onclick='submit_button_clicked();'>";
+            x += "</div>";
+            x += "</div>";
+            x += "</form>";
+            x += "</div>";
+            document.getElementById("json_data").innerHTML = x;
+
+        </script>
+
+
+        <!-- footer section -->
+        <section class="footer-section">
+            <div id="footer"></div>
+        </section>
+    </body>
+</html>

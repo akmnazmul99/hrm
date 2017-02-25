@@ -1,0 +1,341 @@
+<div class="content-row-adjust">
+    <div class="row form-group">
+        <div class="col-md-7">
+            <div class="table-responsive">
+                <table align="center" class="table table-striped table-bordered table-hover">
+                    <tbody> 
+                        <tr>
+
+                            <td class="showPanelBg" style="padding: 10px;" valign="top" width="98%">
+                                <!-- SIMPLE SEARCH -->
+                                <div id="searchAcc" style="z-index: 1; display:block;">
+                                    <form action="" method="post" accept-charset="utf-8" name="basicSearch" id="basicSearch" enctype="multipart/form-data"> 
+                                        <table class="table table-striped table-bordered table-hover">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="searchUIName small" align="left" nowrap="nowrap" width="10%"><span class="moduleName">Search</span></td>
+                                                    <td class="small" align="right" nowrap="nowrap" width="10%"><strong>Id/Name,<br>Card No</strong></td>
+                                                    <td class="small" width="15%"><input class="txtBox" style="width: 120px;" id="id1" name="id1" type="text" value=""></td>		
+                                                    <td class="small" align="right" nowrap="nowrap" width="5%"><strong>Division</strong></td>
+                                                    <td class="small" width="13%"><span id="catechange"><select name="id2" id="id2" style="width: 130px;" class="detailedViewTextBox" onfocus="this.className = 'detailedViewTextBoxOn'" onblur="this.className = 'detailedViewTextBox'">
+                                                                <option value="0" selected="selected">Select</option>
+                                                                <option value="13">Billing</option>
+                                                                <option value="6">CTel-Finance &amp; Accounts</option>
+                                                                <option value="8">CTel-HR &amp; Admin</option>
+                                                                <option value="7">CTel-International Carrier Relation</option>
+                                                                <option value="9">CTel-Legal &amp; Corporate Affairs</option>
+                                                                <option value="21">CTel-Marketing</option>
+                                                                <option value="10">CTel-Technical</option>
+                                                                <option value="12">Electrical</option>
+                                                                <option value="1">IPV-Finance &amp; Accounts</option>
+                                                                <option value="3">IPV-HR &amp; Admin</option>
+                                                                <option value="4">IPV-Legal &amp; Coorporate Affairs</option>
+                                                                <option value="19">IPV-Marketing</option>
+                                                                <option value="22">IPV-Network Operation</option>
+                                                                <option value="24">IPV-News &amp; Media</option>
+                                                                <option value="2">IPV-Software Development</option>
+                                                                <option value="17">IPVCI-Finance &amp; Accounts</option>
+                                                                <option value="15">IPVCI-Marketing (R &amp; D)</option>
+                                                                <option value="16">IPVCI-Technical</option>
+                                                                <option value="14">News &amp; Media</option>
+                                                                <option value="18">NRB-HR &amp; Admin</option>
+                                                                <option value="20">NRB-Marketing</option>
+                                                                <option value="11">Power &amp; Transmission</option>
+                                                            </select></span></td>	
+
+                                                    <td class="small" align="right" nowrap="nowrap" width="5%"><strong>Dept</strong></td>
+                                                    <td class="small" width="13%"><span id="catechange"><select name="id3" id="id3" style="width: 130px;" class="detailedViewTextBox" onfocus="this.className = 'detailedViewTextBoxOn'" onblur="this.className = 'detailedViewTextBox'">
+                                                                <option value="0" selected="selected">Select</option>
+                                                                <option value="19">BDLive24</option>
+                                                                <option value="48">Central Monitoring</option>
+                                                                <option value="56">Core Network</option>
+                                                                <option value="34">CTel-Billing</option>
+                                                                <option value="14">CTel-Billing</option>
+                                                                <option value="11">CTel-Core Network</option>
+                                                                <option value="8">CTel-F&amp;A</option>
+                                                                <option value="23">CTel-HR &amp; Admin</option>
+                                                                <option value="29">CTel-IPTV</option>
+                                                                <option value="10">CTel-Legal Advisior</option>
+                                                                <option value="13">CTel-Power &amp; Transmission</option>
+                                                                <option value="9">CTel-Revenue Assurance</option>
+                                                                <option value="12">CTel-Routing</option>
+                                                                <option value="33">CTel-Sales &amp; Support</option>
+                                                                <option value="50">IPV- Big Data Infrastructure</option>
+                                                                <option value="35">IPV- DevOps</option>
+                                                                <option value="39">IPV- iLife360</option>
+                                                                <option value="2">IPV- Revenue Assurance</option>
+                                                                <option value="54">IPV- Support Team</option>
+                                                                <option value="41">IPV-Android</option>
+                                                                <option value="43">IPV-Big Data</option>
+                                                                <option value="44">IPV-Cloud</option>
+                                                                <option value="28">IPV-Content Writing</option>
+                                                                <option value="24">IPV-Creative Design </option>
+                                                                <option value="31">IPV-ETL</option>
+                                                                <option value="1">IPV-F&amp;A</option>
+                                                                <option value="18">IPV-HR &amp; Admin</option>
+                                                                <option value="53">IPV-Image Processing</option>
+                                                                <option value="40">IPV-iOS</option>
+                                                                <option value="3">IPV-Legal Advisior</option>
+                                                                <option value="15">IPV-Legal General</option>
+                                                                <option value="51">IPV-NOC</option>
+                                                                <option value="25">IPV-Online Marketing</option>
+                                                                <option value="36">IPV-Product &amp; Brand marketing</option>
+                                                                <option value="16">IPV-Project Management</option>
+                                                                <option value="27">IPV-QA &amp; Testing</option>
+                                                                <option value="49">IPV-SDK Team</option>
+                                                                <option value="42">IPV-Server</option>
+                                                                <option value="38">IPV-Technews Blog</option>
+                                                                <option value="37">IPV-Technical Management</option>
+                                                                <option value="30">IPV-Web Development</option>
+                                                                <option value="46">IPV-Windows</option>
+                                                                <option value="21">IPVCI-F &amp; A</option>
+                                                                <option value="22">IPVCI-Marketing</option>
+                                                                <option value="20">IPVCI-Technical</option>
+                                                                <option value="26">NRB-HR &amp; Admin</option>
+                                                                <option value="32">NRB-Marketing</option>
+                                                                <option value="52">Primech</option>
+                                                                <option value="47">Promotion and Activation</option>
+                                                            </select></span></td>
+
+                                                    <td class="small" align="right" nowrap="nowrap" width="5%"><strong>Blood<br>Group</strong></td>
+                                                    <td class="small" width="13%"><span id="catechange"><select name="id4" id="id4" style="width: 60px;font-size:12px;" class="detailedViewTextBox" onfocus="this.className = 'detailedViewTextBoxOn'" onblur="this.className = 'detailedViewTextBox'">
+                                                                <option value="0" selected="selected">Select</option>
+                                                                <option value="1">A+</option>
+                                                                <option value="2">A-</option>
+                                                                <option value="5">AB+</option>
+                                                                <option value="6">AB-</option>
+                                                                <option value="3">B+</option>
+                                                                <option value="4">B-</option>
+                                                                <option value="7">O+</option>
+                                                                <option value="8">O-</option>
+                                                            </select></span></td>
+
+                                                    <td class="small" nowrap="nowrap" width="13%">
+                                                        <input name="Show_1" id="Show_1" onclick="Search('200', '4', 'Please Enter  Employee Id', 'basicSearch')" class="btn btn-default btn-xs" value=" Search Now " type="button">&nbsp;
+                                                        <input type="hidden" name="s_sall" id="s_sall" value="9999999999">
+                                                    </td>
+
+                                                </tr>					
+                                            </tbody>
+                                        </table>
+                                    </form>                </div>
+                                <br>
+                                <!-- ADVANCED SEARCH -->
+                                <!-- PUBLIC CONTENTS STARTS-->
+                                <div class="row">
+                                    <div id="ListViewContents" class="small" style="width: 100%; ">	
+                                        <form action="" method="post" accept-charset="utf-8" name="massdelete" id="massdelete" onsubmit="VtigerJS_DialogBox.block();" enctype="multipart/form-data"> 				 
+                                            <input name="selectedboxes" id="selectedboxes" value="" type="hidden">
+                                            <input name="allselectedboxes" id="allselectedboxes" value="" type="hidden">					
+                                            <!-- List View Master Holder starts -->
+                                            <div id="employee_inforrmation_for_show" style="min-height: 396px;">
+
+                                                <h1>Information</h1>             
+
+
+                                                <div id="supleft" class="col-xs-6">
+
+                                                    <table width="100%">
+                                                        <tbody><tr style="border:1px solid #ccc;">
+                                                                <td style="padding:10px;"><img src="http://software.ipvision.ca/emp_img/emp_1389765652_thumb.jpg" height="100" width="90"></td>
+                                                                <td align="right" style="padding:10px;"><b>100001</b><br><b>Card No:</b>100001<br>Md. Shariful Islam<br>
+                                                                    <br><br><br><br>Email:  sharif@visiontelbd.com<br>Phone: 01740100200<br>
+                                                                    Blood Group: AB Positive</td>
+                                                            </tr>
+                                                        </tbody></table> 
+                                                </div> <div id="supright" class="col-xs-6">
+                                                    <table width="100%">
+                                                        <tbody><tr style="border:1px solid #ccc; margin:10px;">
+                                                                <td style="padding:10px;"><img src="http://software.ipvision.ca/emp_img/emp_1389766513_thumb.jpg" height="100" width="90"></td>
+                                                                <td align="right" style="padding:10px;"><b>100002</b><br><b>Card No:</b>100002<br>Ayrin Islam<br>
+                                                                    <br><br><br><br>Email: ayrin@visiontelbd.com<br>Phone: 01740111222<br>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody></table> 
+                                                </div>
+                                                <div style="clear:both;"></div><br>
+
+                                                <div id="supleft" class="col-xs-6">
+
+                                                    <table width="100%">
+                                                        <tbody><tr style="border:1px solid #ccc;">
+                                                                <td style="padding:10px;"><img src="http://software.ipvision.ca/emp_img/emp_1454936019_thumb.jpg" height="100" width="90"></td>
+                                                                <td align="right" style="padding:10px;"><b>101.1002</b><br><b>Card No:</b>12564083<br>Shyamal Kumar Biswas (Bablu)<br>Company: IPVision Limited
+                                                                    <br>Division: IPV-HR &amp; Admin<br>Department: IPV-HR &amp; Admin<br>Designation: Assistant Manager<br>Email: shyamal@ipvisionbd.com<br>Phone: 01711-048087<br>
+                                                                    Blood Group: O Positive</td>
+                                                            </tr>
+                                                        </tbody></table> 
+                                                </div> <div id="supright" class="col-xs-6">
+                                                    <table width="100%">
+                                                        <tbody><tr style="border:1px solid #ccc; margin:10px;">
+                                                                <td style="padding:10px;"><img src="http://software.ipvision.ca/emp_img/emp_1387349659_thumb.jpg" height="100" width="90"></td>
+                                                                <td align="right" style="padding:10px;"><b>101.1003</b><br><b>Card No:</b>00723666<br>Ayesha Tus Sagira<br>Company: IPVision Limited
+                                                                    <br>Division: IPV-HR &amp; Admin<br>Department: IPV-HR &amp; Admin<br>Designation: Senior Executive<br>Email: sagira@ipvisionbd.com<br>Phone: 01681-200650<br>
+                                                                    Blood Group: A Positive</td>
+                                                            </tr>
+                                                        </tbody></table> 
+                                                </div>
+                                                <div style="clear:both;"></div><br>
+
+                                                <div id="supleft" class="col-xs-6">
+
+                                                    <table width="100%">
+                                                        <tbody><tr style="border:1px solid #ccc;">
+                                                                <td style="padding:10px;"><img src="http://software.ipvision.ca/emp_img/emp_1387776915_thumb.jpg" height="100" width="90"></td>
+                                                                <td align="right" style="padding:10px;"><b>200.2002</b><br><b>Card No:</b>553708<br>Muhsina Mobasshera<br>Company: Cloud Tel Limited
+                                                                    <br>Division: CTel-HR &amp; Admin<br>Department: CTel-HR &amp; Admin<br>Designation: Manager<br>Email: muhsina@ipvisionbd.com<br>Phone: 01714216165<br>
+                                                                    Blood Group: B Positive</td>
+                                                            </tr>
+                                                        </tbody></table> 
+                                                </div> <div id="supright" class="col-xs-6">
+                                                    <table width="100%">
+                                                        <tbody><tr style="border:1px solid #ccc; margin:10px;">
+                                                                <td style="padding:10px;"><img src="http://software.ipvision.ca/emp_img/emp_1459829211_thumb.jpg" height="100" width="90"></td>
+                                                                <td align="right" style="padding:10px;"><b>101.1004</b><br><b>Card No:</b>9627872<br>Jharna Rahman<br>Company: IPVision Limited
+                                                                    <br>Division: IPV-HR &amp; Admin<br>Department: IPV-HR &amp; Admin<br>Designation: Senior Executive<br>Email: jharna@ipvisionbd.com<br>Phone: 01686-709563<br>
+                                                                    Blood Group: AB Positive</td>
+                                                            </tr>
+                                                        </tbody></table> 
+                                                </div>
+                                                <div style="clear:both;"></div><br>
+
+                                                <div id="supleft" class="col-xs-6">
+
+                                                    <table width="100%">
+                                                        <tbody><tr style="border:1px solid #ccc;">
+                                                                <td style="padding:10px;"><img src="http://software.ipvision.ca/emp_img/emp_1387360767_thumb.jpg" height="100" width="90"></td>
+                                                                <td align="right" style="padding:10px;"><b>113.1001</b><br><b>Card No:</b>000111<br>Adv. Md. Najmul Haque Kabir<br>Company: IPVision Limited
+                                                                    <br>Division: IPV-Legal &amp; Coorporate Affairs<br>Department: IPV-Legal General<br>Designation: Senior Manager<br>Email: najmul@ipvisionbd.com<br>Phone: 01712-012846<br>
+                                                                    Blood Group: AB Positive</td>
+                                                            </tr>
+                                                        </tbody></table> 
+                                                </div> <div id="supright" class="col-xs-6">
+                                                    <table width="100%">
+                                                        <tbody><tr style="border:1px solid #ccc; margin:10px;">
+                                                                <td style="padding:10px;"><img src="http://software.ipvision.ca/emp_img/emp_1387779362_thumb.jpg" height="100" width="90"></td>
+                                                                <td align="right" style="padding:10px;"><b>201.2004</b><br><b>Card No:</b>487718<br>Md. Emrul Islam<br>Company: Cloud Tel Limited
+                                                                    <br>Division: CTel-Technical<br>Department: CTel-Power &amp; Transmission<br>Designation: Assistant Manager<br>Email: emrul@cloudtelbd.com<br>Phone: 01710379609<br>
+                                                                    Blood Group: B Positive</td>
+                                                            </tr>
+                                                        </tbody></table> 
+                                                </div>
+                                                <div style="clear:both;"></div><br>                    </div>
+                                        </form></div>
+                                    <span style="padding-top:8px; padding-bottom:8px; padding-left:8px;"><strong> Total:349 </strong></span>
+                                    <div style="float:right; padding-bottom:8px; padding-right:8px;"> 
+                                        <div id="pagination">&nbsp;<strong>1</strong>&nbsp;<a href="http://software.ipvision.ca/index.php/emp_info/view/12/9999999999/8/8">2</a>&nbsp;<a href="http://software.ipvision.ca/index.php/emp_info/view/12/9999999999/8/16">3</a>&nbsp;<a href="http://software.ipvision.ca/index.php/emp_info/view/12/9999999999/8/8">&gt;</a>&nbsp;&nbsp;<a href="http://software.ipvision.ca/index.php/emp_info/view/12/9999999999/8/344">Last ›</a></div>                    </div>
+
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="table-responsive">
+                <table width="100%" class="table table-bordered table-striped">
+                    <tbody><tr >
+                            <th class="detailedViewHeaderContent" colspan="5"> HR Notice </th>
+                        </tr>
+                        <tr >
+                            <th class="cellLabelconet" width="15%">Title </th>
+                            <th class="cellLabelconet" width="15%">Date </th>
+                            <th class="cellLabelconet" width="10%"> Company </th>
+                            <th class="cellLabelconet" width="65%"> Details </th>
+                            <th class="cellLabelconet" width="10%"> File </th>
+                        </tr>
+
+                        <tr >
+                            <td class="cellLabelconet"> VACATION NOTICE </td>
+                            <td class="cellLabelconet">2017-02-19</td>
+                            <td class="cellLabelconet"> IPVision Limited </td>
+                            <td class="cellLabelconet"> Dear Everyone, Our office will remain close on February 21, 2017 for International Mother Language Day and there will also a surprizing Holiday on February 22, 2017 Wednesday!!....Enjoy the 4 Days long Vaccation...:) Regards, HR &amp; Admin </td>
+                            <td class="cellLabelconet"> 
+                            </td>           
+                        </tr>
+                    </tbody></table>
+            </div>
+
+            <div class="table-responsive">
+                <table width="100%" class="table table-bordered table-striped">
+                    <tbody><tr align="center">
+                            <th class="detailedViewHeaderContent" colspan="3"> Yearly Leave Remaining (2017) </th>
+                        </tr>
+                        <tr>
+
+                        </tr><tr>
+                            <td class="cellLabelconet" width="33%"><b> Leave Type</b></td>
+                            <td class="cellLabelconet" width="33%"><b> Total Days </b></td>
+                            <td class="cellLabelconet" width="33%"><b> Details</b></td>
+                        </tr> 
+                        <tr>
+                            <td class="cellLabelconet" width="33%">Forward Earn Leave</td>
+                            <td class="cellLabelconet" width="33%">10</td>
+                            <td class="cellLabelconet" width="33%"></td>
+                        </tr>
+
+
+
+                        <tr style="height: 25px;">
+                            <td class="cellLabelconet">Earn leave &nbsp;</td>
+                            <td class="cellLabelconet">9 &nbsp;</td>
+                            <td class="cellLabelconet"> &nbsp;</td>
+                        </tr>
+
+                        <tr style="height: 25px;">
+                            <td class="cellLabelconet">Medical leave  &nbsp;</td>
+                            <td class="cellLabelconet">9 &nbsp;</td>
+                            <td class="cellLabelconet"> &nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="table-responsive">
+                <table width="100%" class="table table-bordered table-striped">
+                    <tbody><tr >
+                            <th class="detailedViewHeaderContent" colspan="8"> Leave Application (2017) </th>
+                        </tr>
+                        <tr >
+                            <th class="cellLabelconet" width="10%">Leave Type </th>
+                            <th class="cellLabelconet" width="10%">Leave Start  </th>
+                            <th class="cellLabelconet" width="10%">Leave End </th>
+                            <th class="cellLabelconet" width="10%">No of Days </th>
+                            <th class="cellLabelconet" width="10%">Join Date </th>
+                            <th class="cellLabelconet" width="10%">Leave State</th>              
+                        </tr>
+                        <tr >
+                            <td class="cellLabelconet"> Half day </td>
+                            <td class="cellLabelconet"> 2017-01-08 </td>
+                            <td class="cellLabelconet"> 2017-01-08 </td>
+                            <td class="cellLabelconet"> 0.5 </td>
+                            <td class="cellLabelconet"> 2017-01-09 </td>
+                            <td class="cellLabelconet">
+                                Approved 
+                            </td>
+                        </tr>
+                        <tr >
+                            <td class="cellLabelconet"> Half day </td>
+                            <td class="cellLabelconet"> 2017-01-10 </td>
+                            <td class="cellLabelconet"> 2017-01-10 </td>
+                            <td class="cellLabelconet"> 0.5 </td>
+                            <td class="cellLabelconet"> 2017-01-11 </td>
+                            <td class="cellLabelconet">
+                                Approved 
+                            </td>
+                        </tr>
+                        <tr >
+                            <td class="cellLabelconet"> Earn leave </td>
+                            <td class="cellLabelconet"> 2017-01-28 </td>
+                            <td class="cellLabelconet"> 2017-01-29 </td>
+                            <td class="cellLabelconet"> 2 </td>
+                            <td class="cellLabelconet"> 2017-01-30 </td>
+                            <td class="cellLabelconet">
+                                Approved 
+                            </td>
+                        </tr>
+                    </tbody></table>
+            </div>
+        </div>
+    </div>
+</div>
